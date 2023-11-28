@@ -11,7 +11,7 @@ const Hero: React.FC<HeroProps> = ({ id }) => {
       <div className="absolute inset-0">
         <img
           src={hero}
-          alt="Background Image"
+          alt="Background"
           className="object-cover object-center w-full h-full opacity-80"
         />
       </div>
