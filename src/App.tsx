@@ -19,7 +19,7 @@ const App: React.FC = () => {
       <Navbar handleLinkClick={handleLinkClick} />
       <Hero id="home" />
       <Services id="services" />
-      <Customer id="customers"/>
+      <Customer id="customer" />
       <ContactForm id='contact'/>
       <Footer/>
     </div>

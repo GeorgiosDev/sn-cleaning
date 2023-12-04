@@ -11,13 +11,12 @@ interface NavbarProps {
 const Navbar: React.FC<NavbarProps> = ({ handleLinkClick }) => {
 
   const NAV_LINKS = [
-    {  key: 'home', label: 'Η Εταιρεία' },
-    {  key: 'services', label: 'Υπηρεσίες',},
-    {  key: 'customers', label: 'Οι πελάτες μας'},
-    {  key: 'contact', label: 'Επικοινωνία'},
-  
-  
+    { key: 'home', label: 'Η Εταιρεία' },
+    { key: 'services', label: 'Υπηρεσίες' },
+    { key: 'customer', label: 'Οι πελάτες μας' },
+    { key: 'contact', label: 'Επικοινωνία' },
   ];
+  
   const [navbar, setNavbar] = useState(false);
 
   const handleLinkClickInternal = (section: string) => {

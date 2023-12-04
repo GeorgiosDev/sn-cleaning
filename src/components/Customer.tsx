@@ -10,7 +10,7 @@ import logo8 from "../assets/logo-coffee.jpg";
 import logo9 from "../assets/logo-clik.jpg";
 import logo10 from "../assets/logo-basta.jpg";
 import logo11 from "../assets/logo-athos.png";
-import logo12 from "../assets/logo-hotel.png"
+import logo12 from "../assets/logo-grill.jpg"
 
 interface CustomerProps {
   id: string;
@@ -29,12 +29,12 @@ const customerLogos = [
   { name: 'Clik', src: logo9, alt: 'Clik Logo' },
   { name: 'Basta', src: logo10, alt: 'Basta Logo' },
   { name: 'Athos', src: logo11, alt: 'Athos Logo' },
-  { name: "amari", src: logo12, alt: 'Amari' }
+  { name: "grill", src: logo12, alt: 'grill' }
 ];
 
 const Customer: React.FC<CustomerProps> = ({id}) => {
   return (
-    <div className="flex flex-col lg:flex-row bg-myBlue-50">
+    <div id={id} className="flex flex-col lg:flex-row bg-myBlue-50">
       {/* Left side (header and paragraph) */}
       <div className="lg:w-1/2 p-6">
         <h2 className="text-2xl font-extrabold text-center mb-4 text-white">Οι πελάτες μας</h2>
