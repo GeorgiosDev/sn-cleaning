@@ -13,6 +13,7 @@ const Hero: React.FC<HeroProps> = ({ id }) => {
           src={hero}
           alt="Background"
           className="object-cover object-center w-full h-full opacity-80"
+          loading="lazy"
         />
       </div>
 

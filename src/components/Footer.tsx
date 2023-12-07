@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
       <div className="flex flex-wrap gap-10 row-gap-6 mb-8 justify-between">
         <div className="flex flex-col items-center sm:col-span-2">
           <a href="/" aria-label="Go home" title="Company" className="inline-flex items-center">
-            <img src={logo} alt="logo" className='w-16 h-16'/>
+            <img src={logo} alt="logo" className='w-16 h-16' loading="lazy"/>
             <span className="ml-2 text-xl font-bold tracking-wide text-white uppercase">SN Cleaning Solutions</span>
           </a>
           <div className="mt-6 lg:max-w-sm ml-auto">
@@ -36,10 +36,10 @@ const Footer: React.FC = () => {
             <span className="text-base font-bold tracking-wide text-white">Ακολουθήστε μας</span>
             <div className="flex items-center mt-1 space-x-3">
               <a href="https://www.facebook.com/profile.php?id=100090968037388" target='__blank' className="text-pink-500 transition-colors duration-300 hover:text-deep-purple-accent-400">
-                <img src={facebook} alt="Facebook Icon" className="h-12" />
+                <img src={facebook} alt="Facebook Icon" className="h-12" loading="lazy"/>
               </a>
               <a href="https://www.instagram.com/sn_cleaning_solutions/" target='__blank' className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400">
-                <img src={instagram} alt="Instagram Icon" className="h-12" />
+                <img src={instagram} alt="Instagram Icon" className="h-12" loading="lazy"/>
               </a>
             </div>
           </div> 

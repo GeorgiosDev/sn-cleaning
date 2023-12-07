@@ -51,6 +51,7 @@ const Customer: React.FC<CustomerProps> = ({id}) => {
               src={logo.src}
               alt={logo.alt}
               className="w-full h-full"
+              loading="lazy"
             />
           </div>
         ))}

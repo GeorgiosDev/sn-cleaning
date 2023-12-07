@@ -28,7 +28,7 @@ const Navbar: React.FC<NavbarProps> = ({ handleLinkClick }) => {
   return (
     <nav className={`flex flex-row justify-between max-container padding-container relative w-full z-30 h-20 font-roboto bg-myBlue-100  border-b-2 border-blue-50`}>
       <div className='flex flex-row justify-around items-center'>
-        <img alt='logo' width={80} height={70} src={logo} />
+        <img alt='logo' width={80} height={70} src={logo} loading="lazy"/>
       </div>
 
       <div className='regular-20 text-darkTeal-400 hidden md:flex flexCenter ml-6'>
