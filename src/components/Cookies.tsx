@@ -1,8 +1,6 @@
 // Cookies.tsx
 import React, { useState } from 'react';
 import { FaTimes } from 'react-icons/fa';
-import { Link } from 'react-router-dom';  
-import Modal from './Modal';
 
 interface CookiesProps {
   onAccept: () => void;

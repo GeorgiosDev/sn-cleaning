@@ -2,7 +2,6 @@ import React, {useState}from 'react';
 import logo from "../assets/logo-white.png"
 import facebook from "../assets/facebook.png"
 import instagram from "../assets/instagram.png"
-import { Link } from 'react-router-dom';
 import Modal from './Modal';
 
 

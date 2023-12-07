@@ -1,6 +1,5 @@
 import React,{useState} from 'react';
 import { FaTimes } from 'react-icons/fa';
-import Modal from './Modal';
 
 interface PrivacyProps {
   onClose: () => void;
