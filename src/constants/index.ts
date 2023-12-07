@@ -1,9 +1,9 @@
-import building from "../assets/building.jpg"
-import office from "../assets/office.jpg"
-import renovation from "../assets/renovation.jpg"
-import glasspane from"../assets/glasspane.jpg"
-import sign from "../assets/sign.jpg"
-import home from "../assets/home.jpg"
+import building from "../assets/building.webp"
+import office from "../assets/office.webp"
+import renovation from "../assets/renovation.webp"
+import glasspane from"../assets/glasspane.webp"
+import sign from "../assets/sign.webp"
+import home from "../assets/home.webp"
   
 // FEATURES SECTION
 export const SERVICES = [
