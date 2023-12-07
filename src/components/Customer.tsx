@@ -1,16 +1,16 @@
 import React from 'react';
-import logo1 from "../assets/logo-toys.jpg";
+import logo1 from "../assets/logo-toys.webp";
 import logo2 from "../assets/logo-rude.png";
-import logo3 from "../assets/logo-nobacco.jpg";
-import logo4 from "../assets/logo-rock.jpg";
-import logo5 from "../assets/logo-ngu.jpg";
-import logo6 from "../assets/logo-koukos.jpg";
-import logo7 from "../assets/logo-farmakeio.jpg";
-import logo8 from "../assets/logo-coffee.jpg";
-import logo9 from "../assets/logo-clik.jpg";
-import logo10 from "../assets/logo-basta.jpg";
+import logo3 from "../assets/logo-nobacco.webp";
+import logo4 from "../assets/logo-rock.webp";
+import logo5 from "../assets/logo-ngu.webp";
+import logo6 from "../assets/logo-koukos.webp";
+import logo7 from "../assets/logo-farmakeio.webp";
+import logo8 from "../assets/logo-coffee.webp";
+import logo9 from "../assets/logo-clik.webp";
+import logo10 from "../assets/logo-basta.webp";
 import logo11 from "../assets/logo-athos.png";
-import logo12 from "../assets/logo-grill.jpg"
+import logo12 from "../assets/logo-grill.webp"
 
 interface CustomerProps {
   id: string;

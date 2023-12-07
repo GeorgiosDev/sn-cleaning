@@ -68,7 +68,8 @@ const ContactSection: React.FC<ContactSectionProps> = ({ id }) => {
                         Τηλέφωνο: <a href="tel:+306982038675">+30 6945705152</a>
                     </p>
                     <p className="text-white dark:text-slate-400 m-0">
-                        Mail: <a href="mailto:sncleaning83@gmail.com">sncleaning83@gmail.com</a>
+                        Mail: <a href="mailto:sncleaning83@gmail.com">sncleaningsolutionsskg@gmail.com
+</a>
                     </p>
                 </div>
                 </li>

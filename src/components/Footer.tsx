@@ -1,9 +1,23 @@
-import React from 'react';
+import React, {useState}from 'react';
 import logo from "../assets/logo-white.png"
 import facebook from "../assets/facebook.png"
 import instagram from "../assets/instagram.png"
+import { Link } from 'react-router-dom';
+import Modal from './Modal';
+
 
 const Footer: React.FC = () => {
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
+
+
   return (
     <div className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 bg-myBlue-50">
       <div className="flex flex-wrap gap-10 row-gap-6 mb-8 justify-between">
@@ -47,11 +61,17 @@ const Footer: React.FC = () => {
         </p>
         <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
           <li>
-            <a href="/" className="text-sm text-white transition-colors duration-300 hover:text-deep-purple-accent-400">
-               Πολιτική Απορρήτου
+            <a
+              href="#"
+              className="text-sm text-white transition-colors duration-300 hover:text-deep-purple-accent-400"
+              onClick={openModal}
+            >
+              Πολιτική Απορρήτου
             </a>
           </li>
         </ul>
+        <Modal isOpen={isModalOpen} onClose={closeModal} />
+
       </div>
     </div>
   );
