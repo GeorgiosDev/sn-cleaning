@@ -1,5 +1,5 @@
 import React from 'react';
-import hero from "../assets/hero-image.jpg";
+import hero from "../assets/customer/hero-image.webp";
 
 interface HeroProps {
   id: string;

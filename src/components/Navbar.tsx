@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link as ScrollLink } from "react-scroll";
 import { FaBars, FaTimes } from 'react-icons/fa';
-import logo from '../assets/logo-white.png';
+import logo from '../assets/customer/logo-white.webp';
 import '../styles/index.css';
 
 interface NavbarProps {

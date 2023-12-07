@@ -1,7 +1,7 @@
 import React, {useState}from 'react';
-import logo from "../assets/logo-white.png"
-import facebook from "../assets/facebook.png"
-import instagram from "../assets/instagram.png"
+import logo from "../assets/customer/logo-white.webp"
+import facebook from "../assets/facebook.webp"
+import instagram from "../assets/instagram.webp"
 import Modal from './Modal';
 
 
