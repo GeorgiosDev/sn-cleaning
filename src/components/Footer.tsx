@@ -36,10 +36,10 @@ const Footer: React.FC = () => {
             <span className="text-base font-bold tracking-wide text-white">Ακολουθήστε μας</span>
             <div className="flex items-center mt-1 space-x-3">
               <a href="https://www.facebook.com/profile.php?id=100090968037388" target='__blank' className="text-pink-500 transition-colors duration-300 hover:text-deep-purple-accent-400 w-14 h-12">
-                <img src={facebook} alt="Facebook Icon" className="h-12" loading="lazy"/>
+                <img src={facebook} alt="Facebook Icon" className="h-12 w-12" loading="lazy"/>
               </a>
               <a href="https://www.instagram.com/sn_cleaning_solutions/" target='__blank' className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400 w-14 h-12">
-                <img src={instagram} alt="Instagram Icon" className="h-12" loading="lazy"/>
+                <img src={instagram} alt="Instagram Icon" className="h-12 w-12" loading="lazy"/>
               </a>
             </div>
           </div> 

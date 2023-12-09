@@ -1,6 +1,7 @@
 // Modal.tsx
 import ReactModal from 'react-modal';
 import Privacy from './Privacy';
+import React from 'react';
 
 interface ModalProps {
   isOpen: boolean;

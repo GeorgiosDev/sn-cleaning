@@ -10,7 +10,7 @@ import { Services } from './components/Services';
 import Cookies from './components/Cookies';
 import Privacy from './components/Privacy';
 
-const App: React.FC = () => {
+const App: React.FC = (): JSX.Element => {
   const [showCookies, setShowCookies] = useState(true);
 
   const handleLinkClick = (section: string) => {
