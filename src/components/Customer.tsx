@@ -1,6 +1,6 @@
 import React from 'react';
 import logo1 from "../assets/customer/logo-toys.webp";
-import logo2 from "../assets/customer/logo-rude.png";
+import logo2 from "../assets/customer/logo-rude.webp";
 import logo3 from "../assets/customer/logo-nobacco.webp";
 import logo4 from "../assets/customer/logo-rock.webp";
 import logo5 from "../assets/customer/logo-ngu.webp";
@@ -9,7 +9,7 @@ import logo7 from "../assets/customer/logo-farmakeio.webp";
 import logo8 from "../assets/customer/logo-coffee.webp";
 import logo9 from "../assets/customer/logo-clik.webp";
 import logo10 from "../assets/customer/logo-basta.webp";
-import logo11 from "../assets/customer/logo-athos.png";
+import logo11 from "../assets/customer/logo-athos.webp";
 import logo12 from "../assets/customer/logo-grill.webp"
 
 interface CustomerProps {
