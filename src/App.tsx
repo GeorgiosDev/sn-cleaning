@@ -1,14 +1,14 @@
-// App.tsx
-import React, { useState } from 'react';
+import React, { useState, lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Customer from './components/Customer';
-import ContactForm from './components/Contact';
-import Footer from './components/Footer';
-import { Services } from './components/Services';
-import Cookies from './components/Cookies';
-import Privacy from './components/Privacy';
+
+const Navbar = lazy(() => import('./components/Navbar'));
+const Hero = lazy(() => import('./components/Hero'));
+const Customer = lazy(() => import('./components/Customer'));
+const ContactForm = lazy(() => import('./components/Contact'));
+const Footer = lazy(() => import('./components/Footer'));
+const Services = lazy(() => import('./components/Services').then(module => ({ default: module.Services })));
+const Cookies = lazy(() => import('./components/Cookies'));
+const Privacy = lazy(() => import('./components/Privacy'));
 
 const App: React.FC = (): JSX.Element => {
   const [showCookies, setShowCookies] = useState(true);
@@ -25,11 +25,18 @@ const App: React.FC = (): JSX.Element => {
     <Router>
       <div className="App">
         <Routes>
-          <Route path="/privacy" element={<Privacy onClose={handleCookiesAccept} />} />
+          <Route
+            path="/privacy"
+            element={
+              <Suspense fallback={<div>Loading...</div>}>
+                <Privacy onClose={handleCookiesAccept} />
+              </Suspense>
+            }
+          />
           <Route
             path="/"
             element={
-              <>
+              <Suspense fallback={<div>Loading...</div>}>
                 {showCookies && <Cookies onAccept={handleCookiesAccept} />}
                 <Navbar handleLinkClick={handleLinkClick} />
                 <Hero id="home" />
@@ -37,7 +44,7 @@ const App: React.FC = (): JSX.Element => {
                 <Customer id="customer" />
                 <ContactForm id="contact" />
                 <Footer />
-              </>
+              </Suspense>
             }
           />
         </Routes>

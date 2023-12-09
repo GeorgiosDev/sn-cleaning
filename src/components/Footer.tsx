@@ -1,8 +1,8 @@
-import React, {useState}from 'react';
+import React, {useState,lazy}from 'react';
 import logo from "../assets/customer/logo-white.webp"
 import facebook from "../assets/facebook.webp"
 import instagram from "../assets/instagram.webp"
-import Modal from './Modal';
+const Modal = lazy(() => import('../components/Modal'));
 
 
 const Footer: React.FC = () => {

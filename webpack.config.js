@@ -1,8 +1,10 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
-  mode: 'development', // Set the mode to 'development'
+  mode: 'development',
   entry: './src/index.tsx',
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -37,9 +39,21 @@ module.exports = {
   resolve: {
     extensions: ['.tsx', '.ts', '.js', '.jsx'],
   },
+  optimization: {
+    minimizer: [
+      new TerserPlugin(), // Minify JavaScript
+      new CssMinimizerPlugin(), // Minify CSS
+    ],
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'public/index.html'),
     }),
   ],
+  devServer: {
+    static: path.join(__dirname, 'dist'), 
+    compress: true,
+    port: 3000,
+    open: true,
+  },
 };
