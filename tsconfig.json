@@ -1,11 +1,18 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["dom", "es2015", "es2016", "es2017"],
+    "lib": [
+      "dom",
+      "es2015",
+      "es2016",
+      "es2017"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
-    "types": ["istanbul-reports"],
+    "types": [
+      "istanbul-reports"
+    ],
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
@@ -14,9 +21,11 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": false,
+    "noEmit": true,
     "jsx": "react",
     "outDir": "./dist"
   },
-  "include": ["src"]
+  "include": [
+    "src"
+  ]
 }
