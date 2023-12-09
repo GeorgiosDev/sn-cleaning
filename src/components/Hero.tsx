@@ -15,12 +15,12 @@ const Hero: React.FC<HeroProps> = ({ id }) => {
       <div className="absolute inset-0">
       <img
           srcSet={`
-            ${hero300x200} 300w,
-            ${hero1070x713} 1070w,
-            ${hero1490x993} 1490w,
-            ${hero1810x1206} 1810w,
-            ${hero} 3580w,
-          `}
+          ${hero300x200} 300w,
+          ${hero1070x713} 1070w,
+          ${hero1490x993} 1490w,
+          ${hero1810x1206} 1810w,
+          ${hero} 3580w,
+        `}
           sizes="100vw"
           src={hero}
           alt="Background"
