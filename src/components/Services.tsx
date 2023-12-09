@@ -16,7 +16,15 @@ export const Services: React.FC<ServiceProps> = ({ id, name }) => {
           {SERVICES.map((service, index) => (
             <div key={index} className='bg-myBlue-50 rounded-lg grid-box w-full'>
               <div className="relative rounded overflow-hidden">
-                <img src={service.icon} alt="icon" className="object-fit w-full h-full" loading="lazy" />
+             
+              <img
+                  src={service.icon}
+                  srcSet={`${service.icon} 477w, ${service.icon} 733w, ${service.icon} 954w, ${service.icon} 1240w, ${service.icon} 1466w, ${service.icon} 1740w, ${service.icon} 1980w`}
+                  sizes="(max-width: 477px) 100vw, (max-width: 733px) 100vw, (max-width: 954px) 100vw, (max-width: 1240px) 100vw, (max-width: 1466px) 100vw, (max-width: 1740px) 100vw, (max-width: 1980px) 100vw, 1980px"
+                  alt="icon"
+                  className="object-fit w-full h-full"
+                  loading="lazy"
+                />
                 <p className="cursor-pointer absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-4xl text-center text-white font-roboto font-medium group-hover:bg-opacity-60 transition">
                   {service.title}
                 </p>

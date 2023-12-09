@@ -1,4 +1,8 @@
 import React from 'react';
+import hero300x200 from "../assets/customer/hero-image.webp";
+import hero1070x713 from "../assets/customer/hero-image.webp";
+import hero1490x993 from "../assets/customer/hero-image.webp";
+import hero1810x1206 from "../assets/customer/hero-image.webp";
 import hero from "../assets/customer/hero-image.webp";
 
 interface HeroProps {
@@ -10,6 +14,7 @@ const Hero: React.FC<HeroProps> = ({ id }) => {
     <div className="relative bg-gradient-to-r from-gray-800 to-blue-800 h-screen text-white overflow-hidden">
       <div className="absolute inset-0">
         <img
+          srcSet={`${hero300x200} 300w, ${hero1070x713} 1070w, ${hero1490x993} 1490w, ${hero1810x1206} 1810w, ...`} 
           src={hero}
           alt="Background"
           className="object-cover object-center w-full h-full opacity-80"
