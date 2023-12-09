@@ -4,7 +4,6 @@ import hero1070x713 from "../assets/customer/hero1070x713.webp";
 import hero1490x993 from "../assets/customer/hero1490x993.webp";
 import hero1810x1206 from "../assets/customer/hero1810x1206.webp";
 import hero from "../assets/customer/hero-image.webp";
-import 'tailwindcss/tailwind.css';
 
 
 interface HeroProps {
@@ -27,7 +26,7 @@ const Hero: React.FC<HeroProps> = ({ id }) => {
           src={hero}
           alt="Background"
           className="object-cover object-center w-full h-full opacity-80"
-          // loading="lazy"
+          loading="lazy"
         />
 
       </div>
