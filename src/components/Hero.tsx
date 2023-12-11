@@ -27,6 +27,7 @@ const Hero: React.FC<HeroProps> = ({ id }) => {
           alt="Background"
           className="object-cover object-center w-full h-full opacity-80"
           loading="lazy"
+          rel="preload"
         />
 
       </div>

@@ -40,10 +40,12 @@ module.exports = {
     extensions: ['.tsx', '.ts', '.js', '.jsx'],
   },
   optimization: {
+    minimize: true,
     minimizer: [
       new TerserPlugin(), // Minify JavaScript
       new CssMinimizerPlugin(), // Minify CSS
     ],
+    
   },
   plugins: [
     new HtmlWebpackPlugin({
